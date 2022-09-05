@@ -1,0 +1,18 @@
+.main-div {
+    height: 100vh;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 50%;
+}
+
+.login-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}

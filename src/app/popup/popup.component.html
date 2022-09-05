@@ -1,0 +1,18 @@
+<div class="popup"  mat-dialog-content>
+    <div>
+        <div  *ngFor="let attribute of data.joke | keyvalue" >
+            <b>{{attribute.key}}</b> and Value: <b> {{attribute.value}}</b>
+        </div>
+    </div>
+    <div *ngIf="data.threeRandomJokes && data.threeRandomJokes.length > 0">
+        <div  *ngFor="let item of data.threeRandomJokes" >
+            <div  *ngFor="let attribute of item | keyvalue" >
+                Key: <b>{{attribute.key}}</b> and Value: <b> {{attribute.value}}</b>
+            </div>
+        </div>
+    </div>
+    <button (click)="closeDialog()">close</button>
+</div>
+
+
+

@@ -1,0 +1,11 @@
+<div class="container">
+    <div  *ngFor="let item of jokes" (click)="onClickJoke(item)" class="item"> 
+        <div *ngIf="item.type === 'signle'" class="joke">
+            {{item.joke}}
+        </div>
+        <div *ngIf="item.type === 'twopart'" class="joke">
+            <p>{{item.setup}}</p>
+            <p>{{item.delivery}}</p>
+        </div> 
+    </div>
+</div>
